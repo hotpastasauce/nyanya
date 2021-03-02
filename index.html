@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Diagnostic Covid-19</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="form1.js"></script>
+  </head>
+  <body>
+    <div class="testbox">
+      <form name="jsForm"  onsubmit="return test()" class="form" method="post" id="f">
+        <div class="banner">
+          <h1><u>Diagnostic Covid-19</u></h1>
+        </div>
+        <div class="item"> <label for="name">Nom:<span>*</span></label>
+          
+          <div class="name-item"> 
+            <input id="name" class="n" name="name" placeholder="Nom"  type="text"> 
+            <label for="pnom" id="pnomm">Prenom:<span>*</span></label>
+            <input id="pnom" class="pn" name="pnom" placeholder="Prenom"  type="text">
+        </div>
+
+          <div class="item"> <label for="bdate">Date de naissance:</label>
+            <input id="bdate" class="d" name="bdate"  type="date"><i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="item">
+          <div class="name-item">
+            <div> <label for="address">Address:<span></span></label>
+              <input id="address" class="a" name="address"  type="text"> </div>
+            <div> 
+              <label for="pays">Pays:</label> <input class="p" id="pays" name="pays">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="name-item">
+            <div> <label for="language">Numero de telephone:</label> 
+              <input id="phone" class="c" name="phone" type="text"> </div>
+            <div> <label for="nationality">Email:</label> 
+              <input id="mail" class="e" name="email" type="text"> </div>
+
+            <section id="section-left">
+            <h2 style="margin-left: 40px;"><strong> </strong>Maladies chroniques</h2>
+            <p class="oop"> 
+              Avez-vous des maladies chroniques ? <br>
+              <p><input id="C1" name="CE1" type="checkbox" class="f"> Maladie cardiaque <br></p>
+              <p><input id="C2" name="CE2" type="checkbox" class="f"> Maladie Pulmonaire <br></p>
+              <p><input id="C3" name="CE3" type="checkbox" class="f"> Diabete <br></p>
+              <p><input id="C4" name="CE4" type="checkbox" class="f"> Troubles auto-immunitaire <br></p>
+            </p>
+            <h2 style="margin-left: 40px;"><strong> </strong>Les symptomes les plus communs</h2>
+            <p class="oop1">
+              <b>Fievre :</b> <br>
+              Est-ce que votre temperature corporelle a depassee 38 ? <br>
+              <input id="RB1" name="RB1" type="radio" value="1" class="p3">Oui <br>
+              <input id="RB2" name="RB1" type="radio" value="2">Non <br>
+              <b class="BFA">Fatigue :</b> <br>
+              Est-ce que vous vous sentez plus ou moins fatigue recemment ? <br>
+              <input id="RB3" name="RB2" type="radio" value="1" class="p2">Oui <br>
+              <input id="RB4" name="RB2" type="radio" value="2">Non <br>
+              <b class="BT">Toux :</b> <br>
+              Avez-vous de la toux ? Quelle sorte ? <br>
+              <input id="RB5" name="RB3" type="radio" value="1" class="p3">Toux seche <br>
+              <input id="RB6" name="RB3" type="radio" value="2" class="p2">Toux reguliere <br>
+              <input id="RB7" name="RB3" type="radio" value="3">Non <br>
+            </p>
+          </section>
+          <section id="section-right">
+                <h2 style="margin-left: 40px;"><strong> </strong>Les symptomes Severes</h2>
+                <p class="oop2">
+                  Avez-vous eu des difficultes a respirer ou un essoufflement ? <br>
+                  <input id="RB8" name="RB4" type="radio" value="1" class="p5">Oui <br>
+                  <input id="RB9" name="RB4" type="radio" value="2">Non <br>
+                  Avez-vous eu des douleurs ou pressions thoraciques ? <br>
+                  <input id="RB10" name="RB5" type="radio" value="1" class="p5">Oui <br>
+                  <input id="RB11" name="RB5" type="radio" value="2">Non <br>
+                  Avez-vous eu perte de la parole ou du mouvement ? <br>
+                  <input id="RB12" name="RB6" type="radio" value="1" class="p5">Oui <br>
+                  <input id="RB13" name="RB6" type="radio" value="2">Non <br>
+                </p> 
+                <h2 style="margin-left: 40px;"><strong> </strong>Les symptoms moins communs</h2>
+                <b>Les symptomes moins communs</b> <br>
+                <p class="oop3">
+                  Avez-vous eu une perte du gout de l'odorat ? <br>
+                  <input id="RB14" name="RB7" type="radio" value="1" class="p2">Oui <br>
+                  <input id="RB15" name="RB7" type="radio" value="2">Non <br>
+                  Avez-vous des maux de gorge ? <br>
+                  <input id="RB16" name="RB8" type="radio" value="1" class="p2">Oui <br>
+                  <input id="RB17" name="RB8" type="radio" value="2">Non <br>
+                  Avez-vous des maux de tete ? <br>
+                  <input id="RB18" name="RB9" type="radio" value="1" class="p1">Oui <br>
+                  <input id="RB19" name="RB9" type="radio" value="2">Non <br>
+                </p>
+              </section>
+              <div class="btn-block" id="clear"> <button type="submit" href="/">SUBMIT</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+          </form>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
